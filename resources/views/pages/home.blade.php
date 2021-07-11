@@ -6,20 +6,19 @@
 <div class="main_slider js_height">
     <div class="slider_wrap" id="main_slider_wrap">
         <div class="slide">
-        <video id="myVideo" class="bg-img">
-            <source src="{{ asset('storage/video.mp4') }}" type="video/mp4">
-        </video>
+            <div class="bg-img" id="backgroundImage" style="background-image: url({{ asset('img/bg-home.jpg') }})"></div>
+            <video id="myVideo" class="bg-img" style="display:none;">
+                <source src="{{ asset('storage/video.mp4') }}" type="video/mp4">
+            </video>
             <div class="wrap">
                 <div class="wrap_float js_height">
                     <div class="slide_content" style="margin-bottom: 180px;">
                         <div class="title_wrap first_slide">
                             <h2 class="slide_title" style="line-height: 45px;">Selamat Datang<br>Website Pariwisata Kota Baubau</h2>
                         </div>
-                        <!--
-                        <p class="text" style="background-color: #00000044;padding: 25px;border-radius: 0.357rem !important;">
+                        <p class="text first_slide" style="background-color: #00000044;padding: 25px;border-radius: 0.357rem !important;">
                         Visit Baubau merupakan portal informasi satu pintu mengenai informasi akomodasi, wisata, budaya, kuliner yang ada di Kota Baubau, Sulawesi Tenggara.
                         </p>
-                        -->
                         <div class="buttons first_slide">
                                 <a href="#" class="btn button" onclick="playVideo()">Putar Video</a>
                             </div>
@@ -326,11 +325,15 @@
 @section('content_scripts')
 <script type="text/javascript">
 function playVideo(){
+    $('#myVideo').fadeIn(300);
     $('#myVideo').trigger('play');
+    $('#backgroundImage').hide();
     $('.first_slide').fadeOut(300);
 }
 function pauseVideo(){
+    $('#myVideo').fadeOut(300);
     $('#myVideo').trigger('pause');
+    $('#backgroundImage').show();
     $('.first_slide').fadeIn(300);
 }
 </script>

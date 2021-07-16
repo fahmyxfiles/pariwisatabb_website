@@ -18,10 +18,23 @@ class TouristAttractionController extends Controller
     public function __construct() {
         $this->yukTripAPI =  new YukTripAPI();
     }
-    public function index(Request $request)
+    public function index(Request $request, $category = '')
     {
         $searchParams = $request->all();
         $allTouristAttractions = $this->yukTripAPI->getAllTouristAttraction();
+
+        $title = "Semua Destinasi Wisata";
+        $categoryData = null;
+        if(!empty($category)){
+            $categoryData = $this->yukTripAPI->getTouristAttractionCategoryBySlug($category);
+            if($categoryData){
+                $categoryId = $categoryData->id;
+                $allTouristAttractions = Arr::where($allTouristAttractions, function ($value, $key) use ($categoryId){
+                    return $value->category_id === $categoryId;
+                });
+                $title = "Destinasi Wisata " . $categoryData->name;
+            }
+        }
 
         $page = (int)Arr::get($searchParams, 'page', 1);
         $limit = Arr::get($searchParams, 'limit', static::ITEM_PER_PAGE);
@@ -34,10 +47,10 @@ class TouristAttractionController extends Controller
         $touristAttractions = array_slice($allTouristAttractions, $offset, $limit);
 
         if($touristAttractions !== null){
-            return view('pages.destinasi.index', ['datas' => $touristAttractions, 'route'=> 'touristAttraction', 'title' => 'TouristAttraction', 'topPanelInversion' => "inversion", 'totalPage' => $totalPage, 'page' => $page]);
+            return view('pages.destinasi.index', ['datas' => $touristAttractions, 'categoryData' => $categoryData, 'route'=> 'touristAttraction', 'title' => $title, 'topPanelInversion' => "inversion", 'totalPage' => $totalPage, 'page' => $page]);
         }
     }
-    public function show($slug)
+    public function show($category, $slug)
     {
         $instagramPost = $this->yukTripAPI->getTopInstagramPost("baubau");
         shuffle($instagramPost);

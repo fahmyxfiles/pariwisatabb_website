@@ -80,9 +80,8 @@
                                                 }
                                             }
                                         }
-                                        
-                                        echo "Mulai dari " . \YukTripAPI::rupiah($lowest);
                                     ?>
+                                    Mulai dari @rupiah($lowest)
                                     </div>
                                 </div>
                             </div>

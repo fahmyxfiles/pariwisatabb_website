@@ -104,9 +104,8 @@
                                                     }
                                                 }
                                             }
-                                            
-                                            echo \YukTripAPI::rupiah($lowest);
                                         ?>
+                                        @rupiah($lowest)
                                     </div>
                                 </div>
                                 <div class="_title">{{ $room->name }}</div>

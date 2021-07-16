@@ -29,13 +29,9 @@
                                 <li class="dropdown_li">
                                     <a href="#"><span>Destinasi</span></a>
                                     <ul class="dropdown_ul">
-                                        <li><a href="#">Pantai</a></li>
-                                        <li><a href="#">Situs Budaya</a></li>
-                                        <li><a href="#">Goa</a></li>
-                                        <li><a href="#">Muara</a></li>
-                                        <li><a href="#">Taman Wisata</a></li>
-                                        <li><a href="#">Air Terjun</a></li>
-                                        <li><a href="#">Perkemahan</a></li>
+                                        @foreach((new \YukTripAPI())->getAllTouristAttractionCategory() as $category)
+                                        <li><a href="{{ route('touristAttraction.index', ['category' => $category->slug]) }}">{{ $category->name }}</a></li>
+                                        @endforeach
                                     </ul>
                                 </li>
                                 <li class="dropdown_li">

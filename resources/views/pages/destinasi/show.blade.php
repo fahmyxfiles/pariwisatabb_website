@@ -64,6 +64,54 @@
                             @endforeach
                         </ul>
                     </div>
+                    <div class="pricing js-section content-block" id="pricing_vehicle">
+                        <h2 class="title">Tiket Masuk - Kendaraan</h2>
+                        <ul>
+                            <?php 
+                            $vehiclePricing = [];
+                            foreach($data->pricings as $pricing) {
+                                if($pricing->category == 'vehicle') {
+                                    $pricing->category_type = str_replace(['all', 'adult', 'child', 'car', 'motorbike', 'bus'], ['Semua', 'Dewasa', 'Anak-Anak', 'Mobil', 'Motor', 'Bus'], $pricing->category_type);
+                                    $pricing->type = str_replace(['Weekday', 'Weekend', 'Date'], ['Hari Kerja', 'Hari Libur', ''], $pricing->type);
+                                    $vehiclePricing[] = $pricing;
+                                }
+                            }
+                            ?>
+                            @empty($vehiclePricing)
+                                Tidak ada data
+                            @endempty
+                            @foreach($vehiclePricing as $pricing)
+                                <li>
+                                    <span class="li_title">{{ $pricing->category_type }} - {{ $pricing->type }}</span>
+                                    <span class="li_subtitle">@rupiah($pricing->price)</span>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class="pricing js-section content-block" id="pricing_person">
+                        <h2 class="title">Tiket Masuk - Perorang</h2>
+                        <ul>
+                            <?php 
+                            $personPricing = [];
+                            foreach($data->pricings as $pricing) {
+                                if($pricing->category == 'person') {
+                                    $pricing->category_type = str_replace(['all', 'adult', 'child', 'car', 'motorbike', 'bus'], ['Semua', 'Dewasa', 'Anak-Anak', 'Mobil', 'Motor', 'Bus'], $pricing->category_type);
+                                    $pricing->type = str_replace(['Weekday', 'Weekend', 'Date'], ['Hari Kerja', 'Hari Libur', ''], $pricing->type);
+                                    $personPricing[] = $pricing;
+                                }
+                            }
+                            ?>
+                            @empty($personPricing)
+                                Tidak ada data
+                            @endempty
+                            @foreach($personPricing as $pricing)
+                                <li>
+                                    <span class="li_title">{{ $pricing->category_type }} - {{ $pricing->type }}</span>
+                                    <span class="li_subtitle">@rupiah($pricing->price)</span>
+                                </li>
+                            @endforeach
+                        </ul>
+                    </div>
                     @isset($data->map_coordinate)
                     <div class="location js-section content-block" id="location">
                         <h3 class="title">Lokasi</h3>
@@ -79,6 +127,7 @@
                             <li><a class="active" href="#head">Foto / Video</a></li>
                             <li><a href="#overview">Deskripsi</a></li>
                             <li><a href="#included">Fasilitas</a></li>
+                            <li><a href="#pricing_vehicle">Tiket Masuk</a></li>
                             @isset($data->map_coordinate)
                             <li><a href="#location">Lokasi</a></li>
                             @endisset

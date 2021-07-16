@@ -31,6 +31,7 @@ class HomeController extends Controller
         $this->yukTripAPI->fetchHotelData(1);
         $this->yukTripAPI->fetchGuestHouseData(1);
         $this->yukTripAPI->fetchTouristAttractionData(1);
+        $this->yukTripAPI->fetchTouristAttractionCategoryData();
         //$this->yukTripAPI->fetchTopInstagramPost('baubau', ['kotabaubau', 'baubaucity', 'baubausultra']);
     }
 }

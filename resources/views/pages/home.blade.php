@@ -40,7 +40,7 @@
                                 {{ $ta->description }}
                             </p>
                             <div class="buttons">
-                                <a href="{{ route('touristAttraction.show', ['touristAttraction' => $ta->slug]) }}" class="btn button">Selengkapnya</a>
+                                <a href="{{ route('touristAttraction.show', ['category' => (new \YukTripAPI())->getTouristAttractionCategoryById($ta->category_id)->slug, 'touristAttraction' => $ta->slug]) }}" class="btn button">Selengkapnya</a>
                                 <!-- <a href="travel-list-full-width.html" class="link"><span>Choose tour</span></a> -->
                             </div>
                             @isset($touristAttraction[$loop->index+1])
@@ -117,7 +117,7 @@
                     Berbagai Destinasi yang dapat anda kunjungi saat berwisata di Kota Baubau
                 </p>
                 <div class="controls">
-                    <a href="#" class="link">Lihat Selengkapnya</a>
+                    <a href="{{ route('touristAttraction.index') }}" class="link">Lihat Selengkapnya</a>
                     <div class="arrows">
                         <div class="arrow prev"></div>
                         <div class="arrow next"></div>
@@ -127,7 +127,7 @@
             <div class="section_content">
                 <div class="tour-slider" id="tour-slider">
                     @foreach ($touristAttraction as $ta)
-                    <a href="{{ route('touristAttraction.show', ['touristAttraction' => $ta->slug]) }}" class="tour_item" style="background-image: url({{ asset(\YukTripAPI::getImageByType($ta->images, 'main'))}})">
+                    <a href="{{ route('touristAttraction.show', ['category' => (new \YukTripAPI())->getTouristAttractionCategoryById($ta->category_id)->slug, 'touristAttraction' => $ta->slug]) }}" class="tour_item" style="background-image: url({{ asset(\YukTripAPI::getImageByType($ta->images, 'main'))}})">
                         <div class="tour_item_bottom">
                             <h3 class="_title">{{ $ta->name }}</h3>
                             <div class="_info">

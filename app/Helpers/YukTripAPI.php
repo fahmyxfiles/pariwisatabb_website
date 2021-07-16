@@ -125,6 +125,42 @@ class YukTripAPI
         });
     }
 
+    public function fetchTouristAttractionCategoryData(){
+        $result = $this->makeRequest("GET", 
+                                     "/json/tourist_attraction_category", 
+                                     [ 'paginate' => '' ]
+                                    );
+        $data = json_decode($result, true);
+        foreach($data['data'] as $touristAttractionCategoryIndex => $touristAttractionCategory){
+            $data['data'][$touristAttractionCategoryIndex]['slug'] = Str::slug($touristAttractionCategory['name']);
+        }
+        Storage::disk('public')->put('tourist_attraction_category.json', json_encode($data['data']));
+        return $result;
+    }
+
+    public function getAllTouristAttractionCategory()
+    {
+        $data = Storage::disk('public')->get('tourist_attraction_category.json');
+        return json_decode($data, false);
+    }
+
+    public function getTouristAttractionCategoryBySlug($slug)
+    {
+        $data = Storage::disk('public')->get('tourist_attraction_category.json');
+        $array = json_decode($data, false);
+        return Arr::first($array, function ($value, $key) use ($slug) {
+            return $value->slug == $slug;
+        });
+    }
+    public function getTouristAttractionCategoryById($id)
+    {
+        $data = Storage::disk('public')->get('tourist_attraction_category.json');
+        $array = json_decode($data, false);
+        return Arr::first($array, function ($value, $key) use ($id) {
+            return $value->id == $id;
+        });
+    }
+
     public function fetchTouristAttractionData($regency_id){
         $result = $this->makeRequest("GET", 
                                      "/json/tourist_attraction", 
@@ -197,11 +233,6 @@ class YukTripAPI
     {
         $data = Storage::disk('public')->get("instagram/hashtags/$hashtag_key.json");
         return json_decode($data, false);
-    }
-
-    public static function rupiah ($rupiah){
-        $hasil_rupiah = "Rp " . number_format($rupiah,0,',','.');
-	    return $hasil_rupiah;
     }
     public static function getImageByType($images, $type){
         $imageRet = null;

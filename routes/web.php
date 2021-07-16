@@ -30,5 +30,5 @@ Route::get('/hotel/{hotel}', [HotelController::class, 'show'])->name('hotel.show
 Route::get('/penginapan', [GuestHouseController::class, 'index'])->name('guestHouse.index');
 Route::get('/penginapan/{guestHouse}', [GuestHouseController::class, 'show'])->name('guestHouse.show');
 
-Route::get('/destinasi', [TouristAttractionController::class, 'index'])->name('touristAttraction.index');
-Route::get('/destinasi/{touristAttraction}', [TouristAttractionController::class, 'show'])->name('touristAttraction.show');
+Route::get('/destinasi/{category?}', [TouristAttractionController::class, 'index'])->name('touristAttraction.index');
+Route::get('/destinasi/{category}/{touristAttraction?}', [TouristAttractionController::class, 'show'])->name('touristAttraction.show');

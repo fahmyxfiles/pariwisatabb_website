@@ -8439,6 +8439,56 @@ body.os-windows .popup::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
+.tour_page_body .left_content .pricing {
+    margin-bottom: 42px;
+}
+
+.tour_page_body .left_content .pricing ul li {
+    position: relative;
+    padding: 26px 0;
+    padding-left: 0px;
+    width: 50%;
+    border-top: 1px solid #DFDFDF;
+    padding-right: 40px;
+}
+
+.tour_page_body .left_content .pricing ul li:nth-child(odd) {
+    clear: both;
+}
+
+.tour_page_body .left_content .pricing ul li:nth-child(1),
+.tour_page_body .left_content .pricing ul li:nth-child(2) {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.tour_page_body .left_content .pricing ul li:nth-child(1):before,
+.tour_page_body .left_content .pricing ul li:nth-child(2):before {
+    top: 6px;
+}
+
+.tour_page_body .left_content .pricing ul li:nth-child(1):after,
+.tour_page_body .left_content .pricing ul li:nth-child(2):after {
+    top: 22px;
+}
+
+.tour_page_body .left_content .pricing ul li .li_title {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.tour_page_body .left_content .pricing ul li .li_subtitle {
+    color: rgba(74, 74, 74, 0.58);
+    font-size: 18px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
 .tour_page_body .left_content .location .map {
     height: 460px;
     overflow: hidden;

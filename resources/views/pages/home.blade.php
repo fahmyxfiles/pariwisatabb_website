@@ -108,6 +108,20 @@
     </div>
 </div>
 -->
+
+<div class="most_popular">
+    <div class="wrap">
+        <div class="wrap_float">
+            <div class="title_wrap">
+                <h2 class="title">Tentang Kota Baubau</h2>
+            </div>
+            <div class="section_content">
+                saddsa
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="most_popular">
     <div class="wrap">
         <div class="wrap_float">

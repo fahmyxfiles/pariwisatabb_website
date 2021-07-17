@@ -11,7 +11,7 @@
                     <div class="center">
                         <div class="menu">
                             <ul>
-                                <li><a href="{{ route('utama') }}"><span>Utama</span></a></li>
+                                <li><a href="{{ route('utama') }}"><span>Beranda</span></a></li>
                                 <li class="dropdown_li">
                                     <a href="#" class=""><span>Profil</span></a>
                                     <ul class="dropdown_ul">
@@ -19,6 +19,8 @@
                                         <li><a href="{{ route('profil.index', ['page' => 'visi-misi']) }}">Visi Misi</a></li>
                                     </ul>
                                 </li>
+                                <li><a href="#"><span>Berita</span></a></li>
+                                <li><a href="#"><span>Kegiatan</span></a></li>
                                 <li class="dropdown_li">
                                     <a href="#"><span>Akomodasi</span></a>
                                     <ul class="dropdown_ul">
@@ -37,9 +39,18 @@
                                 <li class="dropdown_li">
                                     <a href="#"><span>Kuliner</span></a>
                                     <ul class="dropdown_ul">
-                                        <li><a href="#">Restoran</a></li>
-                                        <li><a href="#">Jajanan Lokal</a></li>
-                                        <li><a href="#">Kedai Kopi</a></li>
+                                        <li><a href="#">Tempat Makan</a></li>
+                                        <li><a href="#">Kategori</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown_li">
+                                    <a href="#"><span>Budaya & Pusaka</span></a>
+                                    <ul class="dropdown_ul">
+                                        <li><a href="#">Kerajinan</a></li>
+                                        <li><a href="#">Benteng</a></li>
+                                        <li><a href="#">Tari-tarian</a></li>
+                                        <li><a href="#">Kegiatan Budaya</a></li>
+                                        <li><a href="#">Bahasa</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#"><span>Tentang</span></a></li>

@@ -24,7 +24,7 @@
                                     <a href="#"><span>Akomodasi</span></a>
                                     <ul class="dropdown_ul">
                                         <li><a href="{{ route('hotel.index') }}">Hotel</a></li>
-                                        <li><a href="{{ route('guestHouse.index') }}">Penginapan</a></li>
+                                        <li><a href="{{ route('penginapan.index') }}">Penginapan</a></li>
                                         <li><a href="{{ route('transportasi.index') }}">Transportasi</a></li>
                                     </ul>
                                 </li>

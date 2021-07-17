@@ -27,10 +27,10 @@ Route::get('/profil/{page}', [HomeController::class, 'profil'])->name('profil.in
 Route::get('/hotel', [HotelController::class, 'index'])->name('hotel.index');
 Route::get('/hotel/{hotel}', [HotelController::class, 'show'])->name('hotel.show');
 
-Route::get('/penginapan', [GuestHouseController::class, 'index'])->name('guestHouse.index');
-Route::get('/penginapan/{guestHouse}', [GuestHouseController::class, 'show'])->name('guestHouse.show');
+Route::get('/penginapan', [GuestHouseController::class, 'index'])->name('penginapan.index');
+Route::get('/penginapan/{guestHouse}', [GuestHouseController::class, 'show'])->name('penginapan.show');
 
-Route::get('/transportasi', [HomeController::class, 'transportasi'])->name('transportation.index');
+Route::get('/transportasi', [HomeController::class, 'transportasi'])->name('transportasi.index');
 
 Route::get('/destinasi/{category?}', [TouristAttractionController::class, 'index'])->name('touristAttraction.index');
 Route::get('/destinasi/{category}/{touristAttraction?}', [TouristAttractionController::class, 'show'])->name('touristAttraction.show');

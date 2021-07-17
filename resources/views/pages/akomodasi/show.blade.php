@@ -85,6 +85,7 @@
                             {{ $data->description }}
                         </p>
                     </div>
+                    <!--
                     <div class="programm js-section content-block" id="programm-days">
                         <h2 class="title">Kamar</h2>
                         @foreach($data->rooms as $room)
@@ -170,6 +171,7 @@
                         </div>
                         @endforeach
                     </div>
+                    -->
                     <div class="included js-section content-block" id="included">
                         <h2 class="title">Fasilitas</h2>
                         <ul>

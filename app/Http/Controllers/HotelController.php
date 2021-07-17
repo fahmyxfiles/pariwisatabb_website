@@ -41,7 +41,7 @@ class HotelController extends Controller
     {
         $hotel = $this->yukTripAPI->getHotelBySlug($slug);
         if($hotel !== null){
-            return view('pages.akomodasi.show', ['data' => $hotel, 'route'=> 'guestHouse', 'title' => 'Penginapan', 'topPanelInversion' => "inversion"]);
+            return view('pages.akomodasi.show', ['data' => $hotel, 'route'=> 'hotel', 'title' => 'Hotel', 'topPanelInversion' => "inversion"]);
         }
     }
 }

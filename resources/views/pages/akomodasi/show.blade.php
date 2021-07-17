@@ -10,7 +10,9 @@
                 <div class="wrap_float" style="width: fit-content;background-color: #00000085;border-radius: 3px;padding-top: 3px;padding-bottom: 3px;padding-right: 6px;padding-left: 6px;color: white;">
                     <a href="#">Utama</a>
                     <span class="separator">/</span>
-                    <a href="#">Hotel</a>
+                    <a href="#">Akomodasi</a>
+                    <span class="separator">/</span>
+                    <a href="#">{{ $title }}</a>
                     <span class="separator">/</span>
                     <a href="#">{{ $data->name }}</a>
                 </div>

@@ -8,6 +8,8 @@
         <div class="wrap_float">
             <a href="#">Utama</a>
             <span class="separator">/</span>
+            <a href="#">Akomodasi</a>
+            <span class="separator">/</span>
             <a href="#">{{ $title }}</a>
         </div>
     </div>

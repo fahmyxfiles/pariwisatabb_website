@@ -197,7 +197,7 @@
                         <ul>
                             <li><a class="active" href="#head">Foto / Video</a></li>
                             <li><a href="#overview">Deskripsi</a></li>
-                            <li><a href="#programm-days">Kamar</a></li>
+                            <!-- <li><a href="#programm-days">Kamar</a></li> -->
                             <li><a href="#included">Fasilitas</a></li>
                             @isset($data->map_coordinate)
                             <li><a href="#location">Lokasi</a></li>

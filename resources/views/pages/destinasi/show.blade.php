@@ -129,7 +129,7 @@
                             <li><a class="active" href="#head">Foto / Video</a></li>
                             <li><a href="#overview">Deskripsi</a></li>
                             <li><a href="#included">Fasilitas</a></li>
-                            <li><a href="#pricing_vehicle">Tiket Masuk</a></li>
+                            <!-- <li><a href="#pricing_vehicle">Tiket Masuk</a></li> -->
                             @isset($data->map_coordinate)
                             <li><a href="#location">Lokasi</a></li>
                             @endisset

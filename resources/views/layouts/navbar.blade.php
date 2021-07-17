@@ -11,7 +11,6 @@
                     <div class="center">
                         <div class="menu">
                             <ul>
-                                <li><a href="{{ route('utama') }}"><span>Beranda</span></a></li>
                                 <li class="dropdown_li">
                                     <a href="#" class=""><span>Profil</span></a>
                                     <ul class="dropdown_ul">

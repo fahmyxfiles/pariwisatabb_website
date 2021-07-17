@@ -3,9 +3,7 @@
 @section('title') Daftar {{ $title }} - Visit Baubau @endsection
 
 @section('content')
-<div class="tour_page">
-    <div class="tour_page_head" style="background-image: url('https://www.visitbaubau.id/storage/images/tourist_attraction/1625412189.jpg')">
-        <div class="breadcrumbs" style="margin-top: 28px;">
+<div class="breadcrumbs white-color" style="margin-top: 28px;">
             <div class="wrap">
                 <div class="wrap_float">
                     <a href="#">Home</a>
@@ -69,8 +67,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>    
         
 @endsection
 

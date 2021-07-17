@@ -22,13 +22,15 @@ use App\Http\Controllers\TouristAttractionController;
 Route::get('/', [HomeController::class, 'index'])->name('utama');
 Route::get('/cronjob', [HomeController::class, 'cronjob']);
 
-Route::get('/profil/{page}', [ProfileController::class, 'index'])->name('profil.index');
+Route::get('/profil/{page}', [HomeController::class, 'profil'])->name('profil.index');
 
 Route::get('/hotel', [HotelController::class, 'index'])->name('hotel.index');
 Route::get('/hotel/{hotel}', [HotelController::class, 'show'])->name('hotel.show');
 
 Route::get('/penginapan', [GuestHouseController::class, 'index'])->name('guestHouse.index');
 Route::get('/penginapan/{guestHouse}', [GuestHouseController::class, 'show'])->name('guestHouse.show');
+
+Route::get('/transportasi', [HomeController::class, 'transportasi'])->name('transportation.index');
 
 Route::get('/destinasi/{category?}', [TouristAttractionController::class, 'index'])->name('touristAttraction.index');
 Route::get('/destinasi/{category}/{touristAttraction?}', [TouristAttractionController::class, 'show'])->name('touristAttraction.show');

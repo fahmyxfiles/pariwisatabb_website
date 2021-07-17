@@ -34,4 +34,23 @@ class HomeController extends Controller
         $this->yukTripAPI->fetchTouristAttractionCategoryData();
         //$this->yukTripAPI->fetchTopInstagramPost('baubau', ['kotabaubau', 'baubaucity', 'baubausultra']);
     }
+
+    private function tampilHalaman($page, $sub_halaman){
+        $page = Page::where('name', $page)->first();
+        if($page){
+            $instagramPost = $this->yukTripAPI->getTopInstagramPost("baubau");
+            shuffle($instagramPost);
+            $instagramPost = array_slice($instagramPost, 0, 5);
+            return view('pages.halaman.index', ['page' => $page, 'sub_halaman' => $sub_halaman, 'topPanelInversion' => "inversion", 'instagramPost' => $instagramPost]);
+        }
+    }
+
+    public function transportasi(){
+       return $this->tampilHalaman('transportasi', 'Akomodasi');
+    }
+
+    public function profil($page)
+    {
+        return $this->tampilHalaman($page, 'Profil');
+    }
 }

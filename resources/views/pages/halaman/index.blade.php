@@ -8,7 +8,7 @@
         <div class="wrap_float">
             <a href="#">Utama</a>
             <span class="separator">/</span>
-            <a href="#">Profil</a>
+            <a href="#">{{ $sub_halaman }}</a>
             <span class="separator">/</span>
             <a href="#">{{ $page->title }}</a>
         </div>

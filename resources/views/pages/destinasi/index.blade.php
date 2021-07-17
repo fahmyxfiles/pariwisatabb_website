@@ -3,7 +3,7 @@
 @section('title') Daftar {{ $title }} - Visit Baubau @endsection
 
 @section('content')
-<div class="breadcrumbs white-color" style="margin-top: 28px;">
+<div class="breadcrumbs" style="margin-top: 28px;">
             <div class="wrap">
                 <div class="wrap_float">
                     <a href="#">Home</a>

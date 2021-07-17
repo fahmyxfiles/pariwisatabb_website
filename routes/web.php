@@ -28,7 +28,7 @@ Route::get('/hotel', [HotelController::class, 'index'])->name('hotel.index');
 Route::get('/hotel/{hotel}', [HotelController::class, 'show'])->name('hotel.show');
 
 Route::get('/penginapan', [GuestHouseController::class, 'index'])->name('penginapan.index');
-Route::get('/penginapan/{guestHouse}', [GuestHouseController::class, 'show'])->name('penginapan.show');
+Route::get('/penginapan/{penginapan}', [GuestHouseController::class, 'show'])->name('penginapan.show');
 
 Route::get('/transportasi', [HomeController::class, 'transportasi'])->name('transportasi.index');
 

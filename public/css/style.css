@@ -11575,7 +11575,7 @@ body.os-windows .popup::-webkit-scrollbar-thumb {
 -----------------------------------------------------------------------------------*/
 
 .gallery-page {
-    background: #000;
+    background: #fff;
     padding-bottom: 70px;
 }
 
@@ -11584,7 +11584,7 @@ body.os-windows .popup::-webkit-scrollbar-thumb {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #000;
+    background: #fff;
     content: '';
     position: fixed;
 }

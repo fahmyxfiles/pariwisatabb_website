@@ -64,6 +64,7 @@
                             @endforeach
                         </ul>
                     </div>
+                    <!--
                     <div class="pricing js-section content-block" id="pricing_vehicle">
                         <h2 class="title">Tiket Masuk - Kendaraan</h2>
                         <ul>
@@ -112,6 +113,7 @@
                             @endforeach
                         </ul>
                     </div>
+                        -->
                     @isset($data->map_coordinate)
                     <div class="location js-section content-block" id="location">
                         <h3 class="title">Lokasi</h3>

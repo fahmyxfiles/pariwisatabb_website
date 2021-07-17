@@ -43,7 +43,7 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown_li">
-                                    <a href="#"><span>Budaya & Pusaka</span></a>
+                                    <a href="#"><span>Budaya</span></a>
                                     <ul class="dropdown_ul">
                                         <li><a href="#">Kerajinan</a></li>
                                         <li><a href="#">Benteng</a></li>

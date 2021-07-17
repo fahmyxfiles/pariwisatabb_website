@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\Page;
+
 use YukTripAPI;
 
 class HomeController extends Controller

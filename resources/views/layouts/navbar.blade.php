@@ -39,8 +39,11 @@
                                 <li class="dropdown_li">
                                     <a href="#"><span>Kuliner</span></a>
                                     <ul class="dropdown_ul">
-                                        <li><a href="#">Tempat Makan</a></li>
-                                        <li><a href="#">Kategori</a></li>
+                                        <li><a href="#">Seafood</a></li>
+                                        <li><a href="#">Lokal</a></li>
+                                        <li><a href="#">Jajanan</a></li>
+                                        <li><a href="#">Kekinian</a></li>
+                                        <li><a href="#">Oleh-Oleh</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown_li">

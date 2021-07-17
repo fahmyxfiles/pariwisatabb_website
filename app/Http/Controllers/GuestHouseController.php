@@ -34,14 +34,14 @@ class GuestHouseController extends Controller
         $guestHouses = array_slice($allGuestHouses, $offset, $limit);
 
         if($guestHouses !== null){
-            return view('pages.akomodasi.index', ['datas' => $guestHouses, 'route'=> 'guestHouse', 'title' => 'Penginapan', 'topPanelInversion' => "inversion", 'totalPage' => $totalPage, 'page' => $page]);
+            return view('pages.akomodasi.index', ['datas' => $guestHouses, 'route'=> 'penginapan', 'title' => 'Penginapan', 'topPanelInversion' => "inversion", 'totalPage' => $totalPage, 'page' => $page]);
         }
     }
     public function show($slug)
     {
         $guestHouse = $this->yukTripAPI->getGuestHouseBySlug($slug);
         if($guestHouse !== null){
-            return view('pages.akomodasi.show', ['data' => $guestHouse, 'route'=> 'guestHouse', 'title' => 'Penginapan', 'topPanelInversion' => "inversion"]);
+            return view('pages.akomodasi.show', ['data' => $guestHouse, 'route'=> 'penginapan', 'title' => 'Penginapan', 'topPanelInversion' => "inversion"]);
         }
     }
 }

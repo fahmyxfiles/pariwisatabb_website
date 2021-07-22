@@ -162,6 +162,7 @@
         </div>
     </div>
 </div>
+<!--
 <div class="destinations">
     <div class="wrap">
         <div class="wrap_float">
@@ -337,6 +338,7 @@
         </div>
     </div>
 </div>
+-->
 @include('social.instagram-post')
 @endsection
 

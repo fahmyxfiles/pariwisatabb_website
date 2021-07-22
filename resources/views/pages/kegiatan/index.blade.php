@@ -29,9 +29,9 @@
             <div class="wrap_float">
                 <div class="posts">
                     @foreach($datas as $data)
-                    <a href="{{ route('event.show', ['name' => $data->slug]) }}" class="tour_item" style="background-image: url({{ asset($data->image_filename) }})">
+                    <a href="{{ route('event.show', ['name' => $data['slug']]) }}" class="tour_item" style="background-image: url({{ asset($data['image_filename']) }})">
                         <div class="tour_item_bottom">
-                            <h3 class="_title">{{ $data->name }}</h3>
+                            <h3 class="_title">{{ $data['name'] }}</h3>
                         </div>
                         <div class="shadow js-shadow"></div>
                     </a>

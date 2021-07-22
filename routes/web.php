@@ -22,6 +22,9 @@ use App\Http\Controllers\TouristAttractionController;
 Route::get('/', [HomeController::class, 'index'])->name('utama');
 Route::get('/cronjob', [HomeController::class, 'cronjob']);
 
+Route::get('/kegiatan', [HomeController::class, 'daftar_kegiatan'])->name('event.index');
+Route::get('/kegiatan/{name}', [HomeController::class, 'kegiatan'])->name('event.show');
+
 Route::get('/profil/{page}', [HomeController::class, 'profil'])->name('profil.index');
 
 Route::get('/hotel', [HotelController::class, 'index'])->name('hotel.index');

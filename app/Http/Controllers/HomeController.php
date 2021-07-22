@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Page;
+use App\Models\Event;
 
 use YukTripAPI;
 
@@ -54,5 +55,20 @@ class HomeController extends Controller
     public function profil($page)
     {
         return $this->tampilHalaman($page, 'Profil');
+    }
+
+
+    public function daftar_kegiatan(){
+        
+    }
+
+    public function kegiatan($slug){
+        $event = Event::where('slug', $slug)->first();
+        if($event){
+            $instagramPost = $this->yukTripAPI->getTopInstagramPost("baubau");
+            shuffle($instagramPost);
+            $instagramPost = array_slice($instagramPost, 0, 5);
+            return view('pages.kegiatan.show', ['event' => $event, 'topPanelInversion' => "inversion", 'instagramPost' => $instagramPost]);
+        }
     }
 }

@@ -17,7 +17,7 @@ class CreateEventsTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('location');
-            $table->text('description');
+            $table->text('contents');
             $table->string('image_filename')->nullable();
             $table->string('documents_name')->nullable();
             $table->datetime('start_registration')->nullable();

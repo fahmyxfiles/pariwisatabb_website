@@ -19,7 +19,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="#"><span>Berita</span></a></li>
-                                <li><a href="#"><span>Kegiatan</span></a></li>
+                                <li><a href="{{ route('event.index') }}"><span>Kegiatan</span></a></li>
                                 <li class="dropdown_li">
                                     <a href="#"><span>Akomodasi</span></a>
                                     <ul class="dropdown_ul">

@@ -22,6 +22,10 @@
             </div>
             <div class="page_body">
                 {!! $event->contents !!}
+
+                <div class="buttons">
+                    <a href="#" class="btn button" tabindex="0">Daftar</a>
+                </div>
             </div>
         </div>
     </div>

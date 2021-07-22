@@ -46,6 +46,7 @@
                                         <li><a href="#">Oleh-Oleh</a></li>
                                     </ul>
                                 </li>
+                                <!--
                                 <li class="dropdown_li">
                                     <a href="#"><span>Budaya</span></a>
                                     <ul class="dropdown_ul">
@@ -56,14 +57,13 @@
                                         <li><a href="#">Bahasa</a></li>
                                     </ul>
                                 </li>
+                                -->
                                 <li><a href="#"><span>Tentang</span></a></li>
                             </ul>
                             <div class="mobile_content" style="padding-top: 25px;">
                                 <div class="social">
                                     <a href="#" class="link facebook"><span></span></a>
                                     <a href="#" class="link instagram"><span></span></a>
-                                    <a href="#" class="link pinterest"><span></span></a>
-                                    <a href="#" class="link twitter"><span></span></a>
                                     <a href="#" class="link youtube"><span></span></a>
                                 </div>
                             </div>

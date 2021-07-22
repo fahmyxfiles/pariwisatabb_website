@@ -17,6 +17,8 @@ class HomeController extends Controller
 
     private $yukTripAPI = null;
 
+    const ITEM_PER_PAGE = 4;
+
     public function __construct() {
         $this->yukTripAPI =  new YukTripAPI();
     }

@@ -64,7 +64,7 @@ class HomeController extends Controller
 
     public function daftar_kegiatan(Request $request){
         $searchParams = $request->all();
-        $allEvents = Event::all()->toArray();
+        $allEvents = Event::all();
 
         $page = (int)Arr::get($searchParams, 'page', 1);
         $limit = Arr::get($searchParams, 'limit', static::ITEM_PER_PAGE);

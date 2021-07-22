@@ -42,7 +42,7 @@ class HomeController extends Controller
         //$this->yukTripAPI->fetchTopInstagramPost('baubau', ['kotabaubau', 'baubaucity', 'baubausultra']);
     }
 
-    private function tampilHalaman(Request $request, $page, $sub_halaman){
+    private function tampilHalaman($page, $sub_halaman){
         $page = Page::where('name', $page)->first();
         if($page){
             $instagramPost = $this->yukTripAPI->getTopInstagramPost("baubau");

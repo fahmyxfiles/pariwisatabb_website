@@ -502,26 +502,6 @@ adress {
     float: left;
 }
 
-.page_body .buttons .link {
-    line-height: 50px;
-    width: auto;
-    display: block;
-    float: left;
-    font-size: 21px;
-    color: #fff;
-    margin-left: 50px;
-}
-
-.page_body .buttons .link span {
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-    transition: all .2s linear;
-}
-
-.page_body .buttons .link:hover span {
-    border-color: #fff;
-    transition: all .2s linear;
-}
-
 a {
     text-decoration: none;
     color: inherit;

@@ -36,6 +36,7 @@
                                         @endforeach
                                     </ul>
                                 </li>
+                                <!--
                                 <li class="dropdown_li">
                                     <a href="#"><span>Kuliner</span></a>
                                     <ul class="dropdown_ul">
@@ -46,7 +47,6 @@
                                         <li><a href="#">Oleh-Oleh</a></li>
                                     </ul>
                                 </li>
-                                <!--
                                 <li class="dropdown_li">
                                     <a href="#"><span>Budaya</span></a>
                                     <ul class="dropdown_ul">

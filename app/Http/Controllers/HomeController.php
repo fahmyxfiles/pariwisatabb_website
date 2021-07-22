@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Models\Page;
 use App\Models\Event;
 
+use Illuminate\Support\Arr;
+
 use YukTripAPI;
 
 class HomeController extends Controller

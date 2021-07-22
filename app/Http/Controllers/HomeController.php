@@ -59,7 +59,22 @@ class HomeController extends Controller
 
 
     public function daftar_kegiatan(){
+        $searchParams = $request->all();
+        $allEvents = Event::all()->toArray();
+
+        $page = (int)Arr::get($searchParams, 'page', 1);
+        $limit = Arr::get($searchParams, 'limit', static::ITEM_PER_PAGE);
+
+        $totalPage = (int)ceil(count($allEvents) / $limit);
+
+        $offset = ($page-1) * $limit;
+        if($offset < 0) $offset = 0;
         
+        $events = array_slice($allEvents, $offset, $limit);
+
+        if($events !== null){
+            return view('pages.kegiatan.index', ['datas' => $events, 'topPanelInversion' => "inversion", 'totalPage' => $totalPage, 'page' => $page]);
+        }
     }
 
     public function kegiatan($slug){

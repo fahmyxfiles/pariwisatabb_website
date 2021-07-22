@@ -18,7 +18,7 @@ class HomeController extends Controller
     public function __construct() {
         $this->yukTripAPI =  new YukTripAPI();
     }
-    public function index()
+    public function index(Request $request)
     {
         $touristAttraction = $this->yukTripAPI->getAllTouristAttraction($this->regencyId);
         $touristAttraction = array_slice($touristAttraction, 0, 5);
@@ -38,7 +38,7 @@ class HomeController extends Controller
         //$this->yukTripAPI->fetchTopInstagramPost('baubau', ['kotabaubau', 'baubaucity', 'baubausultra']);
     }
 
-    private function tampilHalaman($page, $sub_halaman){
+    private function tampilHalaman(Request $request, $page, $sub_halaman){
         $page = Page::where('name', $page)->first();
         if($page){
             $instagramPost = $this->yukTripAPI->getTopInstagramPost("baubau");
@@ -48,17 +48,17 @@ class HomeController extends Controller
         }
     }
 
-    public function transportasi(){
+    public function transportasi(Request $request){
        return $this->tampilHalaman('transportasi', 'Akomodasi');
     }
 
-    public function profil($page)
+    public function profil(Request $request, $page)
     {
         return $this->tampilHalaman($page, 'Profil');
     }
 
 
-    public function daftar_kegiatan(){
+    public function daftar_kegiatan(Request $request){
         $searchParams = $request->all();
         $allEvents = Event::all()->toArray();
 
@@ -77,7 +77,7 @@ class HomeController extends Controller
         }
     }
 
-    public function kegiatan($slug){
+    public function kegiatan(Request $request, $slug){
         $event = Event::where('slug', $slug)->first();
         if($event){
             $instagramPost = $this->yukTripAPI->getTopInstagramPost("baubau");

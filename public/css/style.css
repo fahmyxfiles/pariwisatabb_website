@@ -457,6 +457,18 @@ adress {
     padding: 0;
 }
 
+.included ul,
+.included ol,
+.included li {
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: inherit;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
 .menu ul,
 .menu ol,
 .menu li {

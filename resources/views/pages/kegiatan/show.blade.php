@@ -9,14 +9,14 @@
 <meta property="og:url" content="{{ url()->current() }}">
 <meta property="og:title" content="{{ $event->name }} - Visit Baubau">
 <meta property="og:description" content="{{ strip_tags($event->contents) }}">
-<meta property="og:image" content="{{ asset('event/' . $event->image_filename) }}">
+<meta property="og:image" content="{{ asset('storage/event/' . $event->image_filename) }}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{ url()->current() }}">
 <meta property="twitter:title" content="{{ $event->name }} - Visit Baubau">
 <meta property="twitter:description" content="{{ strip_tags($event->contents) }}">
-<meta property="twitter:image" content="{{ asset('event/' . $event->image_filename) }}">
+<meta property="twitter:image" content="{{ asset('storage/event/' . $event->image_filename) }}">
 @endsection
 
 @section('title') {{ $event->name }} - Visit Baubau @endsection

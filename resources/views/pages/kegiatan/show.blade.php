@@ -46,7 +46,7 @@
                 </div>
                 {!! $event->contents !!}
 
-                <div class="buttons">
+                <div class="buttons" style="transform: none;">
                     <a href="#" class="btn button" tabindex="0">Daftar</a>
                 </div>
             </div>

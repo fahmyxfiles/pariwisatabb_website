@@ -55,8 +55,28 @@
             </div>
 
             <div class="page_head">
-                <h1 class="title">Dokumen-dokumen</h1>
+                <h1 class="title">File Lampiran</h1>
             </div>
+            <table class="sortable">
+                <thead>
+                    <tr>
+                    <th>Filename</th>
+                    <th>Type</th>
+                    <th>Size <small>(bytes)</small></th>
+                    <th>Date Modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class='$class'>
+                        <td><a href='./$namehref'>$name</a></td>
+                        <td><a href='./$namehref'>$extn</a></td>
+                        <td><a href='./$namehref'>$size</a></td>
+                        <td sorttable_customkey='$timekey'><a href='./$namehref'>$modtime</a></td>
+                    </tr>");
+                    }
+                ?>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

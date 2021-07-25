@@ -51,6 +51,11 @@
                     <a target="_blank" href="{{ $event->registrar_data }}" class="btn button" tabindex="0">Pendaftaran</a>
                 </div>
                 @endif
+
+            </div>
+
+            <div class="page_head">
+                <h1 class="title">Dokumen-dokumen</h1>
             </div>
         </div>
     </div>

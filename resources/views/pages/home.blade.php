@@ -115,7 +115,7 @@
             <div class="title_wrap">
                 <h2 class="title">Tentang Kota Baubau</h2>
             </div>
-            <div class="section_content page_body">
+            <div class="section_content page_body" style="padding: 15px;">
             <p>Kota Baubau berada di Pulau Buton yang terletak di sebelah tenggara jazirah Pulau Sulawesi. 
                Pulau ini diapit oleh lautan, yaitu Laut Banda di sebelah utara dan timur, kemudian Laut Flores di sebelah selatannya, sedangkan di sebelah barat terdapat Selat Buton dan Teluk Bone.</P>
             <p>Dari sisi letak secara nasional, Kota Baubau merupakan kota yang memiliki letak strategis. Kota Baubau adalah daerah penghubung (connecting area) antara Kawasan Barat Indonesia (KBI) dengan Kawasan Timur Indonesia (KTI). 

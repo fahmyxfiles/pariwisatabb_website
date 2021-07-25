@@ -56,13 +56,13 @@
                         <li><a href="{{ url('storage/events' . $file->filename) }}"> {{ $file->filename }} ({{ $file->mimes }})</a></li>
                     @endforeach
                 </ul>
-            </div>
 
-            @if($event->registrar_type == 'external_url' || $event->registrar_type == 'external_contact')
-                <div class="buttons" style="transform: none;">
-                    <a target="_blank" href="{{ $event->registrar_data }}" class="btn button" tabindex="0">Pendaftaran</a>
-                </div>
-            @endif
+                @if($event->registrar_type == 'external_url' || $event->registrar_type == 'external_contact')
+                    <div class="buttons" style="transform: none;">
+                        <a target="_blank" href="{{ $event->registrar_data }}" class="btn button" tabindex="0">Pendaftaran</a>
+                    </div>
+                @endif
+            </div>
         </div>
     </div>
 </div>

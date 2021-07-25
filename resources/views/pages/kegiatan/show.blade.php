@@ -45,13 +45,6 @@
                     <img src="{{ asset('storage/' . $event->image_filename) }}" alt="Poster" style="width: 100%;height: auto;"/>
                 </div>
                 {!! $event->contents !!}
-
-                @if($event->registrar_type == 'external_url' || $event->registrar_type == 'external_contact')
-                <div class="buttons" style="transform: none;">
-                    <a target="_blank" href="{{ $event->registrar_data }}" class="btn button" tabindex="0">Pendaftaran</a>
-                </div>
-                @endif
-
             </div>
 
             <div class="page_head" style="margin-top: 20px;">
@@ -64,6 +57,12 @@
                     @endforeach
                 </ul>
             </div>
+
+            @if($event->registrar_type == 'external_url' || $event->registrar_type == 'external_contact')
+                <div class="buttons" style="transform: none;">
+                    <a target="_blank" href="{{ $event->registrar_data }}" class="btn button" tabindex="0">Pendaftaran</a>
+                </div>
+            @endif
         </div>
     </div>
 </div>

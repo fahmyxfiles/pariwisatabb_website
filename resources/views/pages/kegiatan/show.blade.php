@@ -57,11 +57,13 @@
             <div class="page_head" style="margin-top: 20px;">
                 <h1 class="title">File Lampiran</h1>
             </div>
-            <ul>
-                @foreach($event->files as $file)
-                    <li><a href="{{ url('storage/events' . $file->filename) }}"> {{ $file->filename }} ({{ $file->mimes }})</a></li>
-                @endforeach
-            </ul>
+            <div class="page_body">
+                <ul>
+                    @foreach($event->files as $file)
+                        <li><a href="{{ url('storage/events' . $file->filename) }}"> {{ $file->filename }} ({{ $file->mimes }})</a></li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </div>
 </div>

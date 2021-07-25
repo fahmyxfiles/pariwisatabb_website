@@ -48,7 +48,7 @@
 
                 @if($event->registrar_type == 'external_url' || $event->registrar_type == 'external_contact')
                 <div class="buttons" style="transform: none;">
-                    <a href="{{ $event->registrar_data }}" class="btn button" tabindex="0">Pendaftaran</a>
+                    <a target="_blank" href="{{ $event->registrar_data }}" class="btn button" tabindex="0">Pendaftaran</a>
                 </div>
                 @endif
             </div>

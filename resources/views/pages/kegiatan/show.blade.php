@@ -42,7 +42,7 @@
             <div class="page_body" style="padding-right: 25vw;font-size: 18px;">
 
                 <div class="page_image">
-                    <img src="{{ asset('storage/' . $event->image_filename) }}" alt="Poster" />
+                    <img src="{{ asset('storage/' . $event->image_filename) }}" alt="Poster" style="width: 100%;height: auto;"/>
                 </div>
                 {!! $event->contents !!}
 

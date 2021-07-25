@@ -39,7 +39,7 @@
             <div class="page_head">
                 <h1 class="title">{{ $event->name }}</h1>
             </div>
-            <div class="page_body">
+            <div class="page_body" style="margin-right: 25vw;">
 
                 <div class="page_image">
                     <img src="{{ asset('storage/' . $event->image_filename) }}" alt="Poster" />

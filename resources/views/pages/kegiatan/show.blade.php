@@ -39,16 +39,24 @@
             <div class="page_head">
                 <h1 class="title">{{ $event->name }}</h1>
             </div>
-            <div class="page_body" style="margin-right: 25vw;">
+            <div class="page_body" style="padding-right: 25vw;font-size: 18px;">
 
                 <div class="page_image">
                     <img src="{{ asset('storage/' . $event->image_filename) }}" alt="Poster" />
                 </div>
                 {!! $event->contents !!}
 
+                @if($event->registrar_type == 'external_url')
                 <div class="buttons" style="transform: none;">
-                    <a href="#" class="btn button" tabindex="0">Daftar</a>
+                    <a href="$event->registrar_data" class="btn button" tabindex="0">Daftar</a>
                 </div>
+                @endif
+
+                @if($event->registrar_type == 'external_url')
+                <div class="buttons" style="transform: none;">
+                    <a href="$event->registrar_data" class="btn button" tabindex="0">Daftar</a>
+                </div>
+                @endif
             </div>
         </div>
     </div>

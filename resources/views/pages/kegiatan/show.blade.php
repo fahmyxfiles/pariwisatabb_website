@@ -1,5 +1,24 @@
 @extends('app')
 
+@section('meta_tags') 
+<meta name="title" content="{{ $event->name }} - Visit Baubau">
+<meta name="description" content="{{ strip_tags($event->contents) }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ url()->current() }}">
+<meta property="og:title" content="{{ $event->name }} - Visit Baubau">
+<meta property="og:description" content="{{ strip_tags($event->contents) }}">
+<meta property="og:image" content="{{ asset('event/' . $data['image_filename']) }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ url()->current() }}">
+<meta property="twitter:title" content="{{ $event->name }} - Visit Baubau">
+<meta property="twitter:description" content="{{ strip_tags($event->contents) }}">
+<meta property="twitter:image" content="{{ asset('event/' . $data['image_filename']) }}">
+@endsection
+
 @section('title') {{ $event->name }} - Visit Baubau @endsection
 
 @section('content')

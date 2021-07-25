@@ -47,7 +47,7 @@
                 {!! $event->contents !!}
             </div>
 
-            <div class="page_head" style="margin-top: 20px;">
+            <div class="page_head" style="margin-top: 20px;margin-bottom: 0px;">
                 <h1 class="title">File Lampiran</h1>
             </div>
             <div class="page_body">

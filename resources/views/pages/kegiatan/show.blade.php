@@ -53,7 +53,7 @@
             <div class="page_body">
                 <ul>
                     @foreach($event->files as $file)
-                        <li><a href="{{ url('storage/events' . $file->filename) }}"> {{ $file->filename }} ({{ $file->mimes }})</a></li>
+                        <li><a href="{{ url('storage/events/' . $file->filename) }}"> {{ $file->filename }} ({{ $file->mimes }})</a></li>
                     @endforeach
                 </ul>
 

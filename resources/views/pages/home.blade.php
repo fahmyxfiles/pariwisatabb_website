@@ -117,14 +117,24 @@
             </div>
             <div class="section_content page_body" style="padding: 15px;">
 
-            <div class="page_image" style="margin-bottom: 10px;">
+                <div class="page_image" style="margin-bottom: 10px;">
                     <img src="{{ asset('img/DJI_0396.jpg') }}" alt="Drone Baubau" style="width: 100%;height: auto;"/>
                 </div>
-            <p>Kota Baubau berada di Pulau Buton yang terletak di sebelah tenggara jazirah Pulau Sulawesi. 
-               Pulau ini diapit oleh lautan, yaitu Laut Banda di sebelah utara dan timur, kemudian Laut Flores di sebelah selatannya, sedangkan di sebelah barat terdapat Selat Buton dan Teluk Bone.</P>
-            <p>Dari sisi letak secara nasional, Kota Baubau merupakan kota yang memiliki letak strategis. Kota Baubau adalah daerah penghubung (connecting area) antara Kawasan Barat Indonesia (KBI) dengan Kawasan Timur Indonesia (KTI). 
-                Selain itu bagi masyarakat daerah hinterlandnya (Kabupaten Buton, Kabupaten Muna, Kabupaten Wakatobi, Kabupaten Bombana, Kabupaten Buton Tengah dan Kabupaten Buton Selatan), Kota Baubau berperan sebagai daerah akumulator hasil produksi dan distributor kebutuhan daerah tersebut.
-                Kota Baubau yang berada pada Selat Baubau dan merupakan mulut Tenggara dari wilayah Laut Teluk Bone berada pada pergeseran titik episentrum ekonomi kelautan kawasan pasifik sebagai masa depan bagi pertumbuhan kawasan Timur Indonesia.</p>
+                <p>Kota Baubau berada di Pulau Buton yang terletak di sebelah tenggara jazirah Pulau Sulawesi. 
+                    Pulau ini diapit oleh lautan, yaitu Laut Banda di sebelah utara dan timur, kemudian Laut Flores di sebelah selatannya, sedangkan di sebelah barat terdapat Selat Buton dan Teluk Bone.
+                </P>
+                <p>Dari sisi letak secara nasional, Kota Baubau merupakan kota yang memiliki letak strategis. Kota Baubau adalah daerah penghubung (connecting area) antara Kawasan Barat Indonesia (KBI) dengan Kawasan Timur Indonesia (KTI). 
+                    Selain itu bagi masyarakat daerah hinterlandnya (Kabupaten Buton, Kabupaten Muna, Kabupaten Wakatobi, Kabupaten Bombana, Kabupaten Buton Tengah dan Kabupaten Buton Selatan), Kota Baubau berperan sebagai daerah akumulator hasil produksi dan distributor kebutuhan daerah tersebut.                Kota Baubau yang berada pada Selat Baubau dan merupakan mulut Tenggara dari wilayah Laut Teluk Bone berada pada pergeseran titik episentrum ekonomi kelautan kawasan pasifik sebagai masa depan bagi pertumbuhan kawasan Timur Indonesia.
+                </p>
+            </div>
+
+            <div class="title_wrap">
+                <h2 class="title">Bagaimana cara menuju Kota Baubau</h2>
+            </div>
+            <div class="section_content page_body" style="padding: 15px;">
+                <div class="page_image" style="margin-bottom: 10px;">
+                    <img src="{{ asset('img/baubauhowto.png') }}" alt="How to get in Baubau" style="width: 100%;height: auto;"/>
+                </div>
             </div>
         </div>
     </div>

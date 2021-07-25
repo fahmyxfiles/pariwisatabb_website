@@ -42,7 +42,7 @@
             <div class="page_body">
 
                 <div class="page_image">
-                    <img src="asset('storage/' . $event->image_filename)" alt="Poster" />
+                    <img src="{{ asset('storage/' . $event->image_filename) }}" alt="Poster" />
                 </div>
                 {!! $event->contents !!}
 

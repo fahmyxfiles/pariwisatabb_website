@@ -54,29 +54,14 @@
 
             </div>
 
-            <div class="page_head">
+            <div class="page_head" style="margin-top: 20px;">
                 <h1 class="title">File Lampiran</h1>
             </div>
-            <table class="sortable">
-                <thead>
-                    <tr>
-                    <th>Filename</th>
-                    <th>Type</th>
-                    <th>Size <small>(bytes)</small></th>
-                    <th>Date Modified</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class='$class'>
-                        <td><a href='./$namehref'>$name</a></td>
-                        <td><a href='./$namehref'>$extn</a></td>
-                        <td><a href='./$namehref'>$size</a></td>
-                        <td sorttable_customkey='$timekey'><a href='./$namehref'>$modtime</a></td>
-                    </tr>");
-                    }
-                ?>
-                </tbody>
-            </table>
+            <ul>
+                @foreach($event->files as $file)
+                    <li><a href="url('storage/events' . $file->filename)">$file->filename ($file->mimes)</a></li>
+                @endforeach
+            </ul>
         </div>
     </div>
 </div>

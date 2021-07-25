@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Event extends Model
 {
     use HasFactory;
+
+
+    protected $with = ['files'];
+    public function files()
+    {
+        return $this->hasMany(EventFile::class);
+    }
 }

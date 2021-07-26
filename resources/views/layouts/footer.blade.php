@@ -51,7 +51,7 @@
                     <a href="#">Kebijakan Layanan</a>
                 </div>
                 <div class="right">
-                    Copyright © 2021 MyMoments Indonesia<br>Dikelola oleh Dinas Pariwisata Kota Baubau
+                    Copyright © 2021 <a href="https://mymoments.web.id" >MyMoments Production</a><br>Dikelola oleh Dinas Pariwisata Kota Baubau
                 </div>
             </div>
         </div>

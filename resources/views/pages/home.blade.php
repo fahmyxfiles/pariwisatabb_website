@@ -14,7 +14,7 @@
                 <div class="wrap_float js_height">
                     <div class="slide_content" style="margin-bottom: 180px;">
                         <div class="title_wrap first_slide">
-                            <h2 class="slide_title" style="line-height: 45px;">Selamat Datang<br>Website Pariwisata Kota Baubau</h2>
+                            <h1 class="slide_title" style="line-height: 45px;">Selamat Datang<br>Website Pariwisata Kota Baubau</h1>
                         </div>
                         <p class="text first_slide" style="background-color: #00000044;padding: 25px;border-radius: 0.357rem !important;">
                         Visit Baubau merupakan portal informasi satu pintu mengenai informasi akomodasi, wisata, budaya, kuliner yang ada di Kota Baubau, Sulawesi Tenggara.
@@ -34,7 +34,7 @@
                     <div class="wrap_float js_height">
                         <div class="slide_content">
                             <div class="title_wrap">
-                                <h2 class="slide_title">{{ $ta->name }}</h2>
+                                <h1 class="slide_title">{{ $ta->name }}</h1>
                             </div>
                             <p class="text" style="background-color: #00000044;padding: 25px;border-radius: 0.357rem !important;">
                                 {{ $ta->description }}

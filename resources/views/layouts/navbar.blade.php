@@ -18,7 +18,7 @@
                                         <li><a href="{{ route('profil.index', ['page' => 'visi-misi']) }}">Visi Misi</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#"><span>Berita</span></a></li>
+                                <!-- <li><a href="#"><span>Berita</span></a></li> -->
                                 <li><a href="{{ route('event.index') }}"><span>Kegiatan</span></a></li>
                                 <li class="dropdown_li">
                                     <a href="#"><span>Akomodasi</span></a>
@@ -58,7 +58,7 @@
                                     </ul>
                                 </li>
                                 -->
-                                <li><a href="#"><span>Tentang</span></a></li>
+                                <!-- <li><a href="#"><span>Tentang</span></a></li> -->
                             </ul>
                             <div class="mobile_content" style="padding-top: 25px;">
                                 <div class="social">

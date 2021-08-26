@@ -10,7 +10,7 @@ use Illuminate\Support\Arr;
 class YukTripAPI
 {
 
-    private $baseUrl = "http://server.mymoments.web.id:8000";
+    private $baseUrl = "https://admin.visitbaubau.id";
 
     private function getInstagramExploreMedia($hashtag){
         $targetUrl = "https://www.instagram.com/explore/tags/$hashtag/?__a=1";

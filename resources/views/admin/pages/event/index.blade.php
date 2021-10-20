@@ -32,6 +32,9 @@
             <div class="col">
               <h3 class="mb-0">Daftar Kegiatan</h3>
             </div>
+            <div class="col text-right">
+              <a href="#!" class="btn btn-sm btn-success">Tambah Kegiatan</a>
+            </div>
           </div>
         </div>
         <div class="table-responsive">

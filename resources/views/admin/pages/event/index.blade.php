@@ -1,6 +1,6 @@
 @extends('admin.app')
 
-@section('title') Visit Baubau Admin - Dasbor @endsection
+@section('title') Visit Baubau Admin - Daftar Kegiatan @endsection
 
 @section('page_header')
 

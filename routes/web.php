@@ -42,4 +42,7 @@ use App\Http\Controllers\AdminController;
 
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.index');
+    Route::prefix('event')->group(function () {
+        Route::get('/', [EventController::class, 'index'])->name('admin.event.index');
+    });
 });

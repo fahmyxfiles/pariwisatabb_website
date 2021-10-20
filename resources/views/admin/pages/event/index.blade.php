@@ -72,10 +72,10 @@
                   {{ $event->getRegistrarTypeText() }}
                 </td>
                 <td class="table-actions">
-                  <a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                  <a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Sunting">
                     <i class="fas fa-user-edit"></i>
                   </a>
-                  <a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                  <a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
                     <i class="fas fa-trash"></i>
                   </a>
                 </td>

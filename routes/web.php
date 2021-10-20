@@ -37,3 +37,9 @@ Route::get('/transportasi', [HomeController::class, 'transportasi'])->name('tran
 
 Route::get('/destinasi/{category?}', [TouristAttractionController::class, 'index'])->name('touristAttraction.index');
 Route::get('/destinasi/{category}/{touristAttraction?}', [TouristAttractionController::class, 'show'])->name('touristAttraction.show');
+
+use App\Http\Controllers\AdminController;
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('admin.index');
+});

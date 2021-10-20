@@ -39,6 +39,7 @@ Route::get('/destinasi/{category?}', [TouristAttractionController::class, 'index
 Route::get('/destinasi/{category}/{touristAttraction?}', [TouristAttractionController::class, 'show'])->name('touristAttraction.show');
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\EventController;
 
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.index');

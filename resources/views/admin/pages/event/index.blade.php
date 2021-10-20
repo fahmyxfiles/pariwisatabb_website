@@ -53,7 +53,7 @@
               </tr>
             </thead>
             <tbody>
-              @foreach($events as $event)
+              @forelse($events as $event)
               <tr>
                 <td>
                   {{ $loop->index+1 }}
@@ -87,7 +87,11 @@
                   </a>
                 </td>
               </tr>
-              @endforeach
+              @empty
+              <tr>
+                <td colspan="7">Tidak ada kegiatan</td>
+              </tr>
+              @endforelse
             </tbody>
           </table>
         </div>

@@ -14,7 +14,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::all();
+        $events = [];
         return view('admin.pages.event.index', compact('events'));
     }
 

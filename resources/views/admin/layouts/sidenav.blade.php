@@ -26,32 +26,7 @@
                 <a class="nav-link active" href="/" ><i class="ni ni-shop text-primary"></i><span class="nav-link-text">Utama</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                <i class="ni ni-ungroup text-orange"></i>
-                <span class="nav-link-text">Examples</span>
-              </a>
-              <div class="collapse" id="navbar-examples">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="../../pages/examples/pricing.html" class="nav-link">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/login.html" class="nav-link">Login</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/register.html" class="nav-link">Register</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/lock.html" class="nav-link">Lock</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/timeline.html" class="nav-link">Timeline</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="../../pages/examples/profile.html" class="nav-link">Profile</a>
-                  </li>
-                </ul>
-              </div>
+              <a class="nav-link" href="../../pages/examples/pricing.html"><i class="ni ni-ungroup text-orange"></i><span class="nav-link-text">Daftar Kegiatan</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-components">

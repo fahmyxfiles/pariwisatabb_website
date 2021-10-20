@@ -4,7 +4,7 @@
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="/admin">
-          <img src="{{ asset('img/logo-inversed.png') }}" class="navbar-brand-img" alt="...">
+          <img src="{{ asset('img/logo_inversed.png') }}" class="navbar-brand-img" alt="...">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->

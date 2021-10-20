@@ -102,27 +102,25 @@
 
 @section('page_scripts')
   <script type="text/javascript">
-  $(document).ready(function(){
-    function confirmDelete(id){
-      Swal.fire({
-        title: 'Kamu yakin?',
-        text: "Anda akan menghapus Kegiatan tersebut, semua Dokumen mengenai Kegiatan ini akan ikut terhapus",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Ya',
-        cancelButtonText: 'Batal'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
-          )
-        }
-      })
-    }
-  })
+  function confirmDelete(id){
+    Swal.fire({
+      title: 'Kamu yakin?',
+      text: "Anda akan menghapus Kegiatan tersebut, semua Dokumen mengenai Kegiatan ini akan ikut terhapus",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Ya',
+      cancelButtonText: 'Batal'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+    })
+  }
   </script>
 @endsection

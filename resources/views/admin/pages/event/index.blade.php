@@ -54,7 +54,9 @@
                   {{ $event->name }}
                 </th>
                 <td>
-                  {{ route('event.show', ['name' => $event->slug]) }}
+                  <a href="{{ route('event.show', ['name' => $event->slug]) }}" target="_blank">
+                    Lihat
+                  </a>
                 </td>
                 <td>
                   {{ $event->location }}

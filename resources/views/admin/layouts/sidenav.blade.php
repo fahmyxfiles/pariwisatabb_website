@@ -23,10 +23,10 @@
           <!-- Nav items -->
           <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="/" ><i class="ni ni-shop text-primary"></i><span class="nav-link-text">Utama</span></a>
+                <a class="nav-link {{ Route::is('admin.index') ? 'active' : '' }}" href="/" ><i class="ni ni-shop text-primary"></i><span class="nav-link-text">Utama</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{route('admin.event.index')}}"><i class="ni ni-calendar-grid-58 text-orange"></i><span class="nav-link-text">Daftar Kegiatan</span></a>
+              <a class="nav-link {{ Route::is('admin.event.index') ? 'active' : '' }}" href="{{route('admin.event.index')}}"><i class="ni ni-calendar-grid-58 text-orange"></i><span class="nav-link-text">Daftar Kegiatan</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../../pages/examples/pricing.html"><i class="ni ni-align-left-2 text-blue"></i><span class="nav-link-text">Daftar Berita</span></a>

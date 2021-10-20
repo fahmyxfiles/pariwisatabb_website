@@ -40,6 +40,6 @@ Route::get('/destinasi/{category}/{touristAttraction?}', [TouristAttractionContr
 
 use App\Http\Controllers\AdminController;
 
-Route::prefix('admin')->group(function () {//
+Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin.index');
 });

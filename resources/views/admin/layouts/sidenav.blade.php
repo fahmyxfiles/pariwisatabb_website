@@ -4,7 +4,7 @@
       <!-- Brand -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="/admin">
-          <img src="{{ asset('img/logo_inversed.png') }}" class="navbar-brand-img" alt="...">
+          <img src="{{ asset('img/logo_inversed.png') }}" class="navbar-brand-img" alt="Barakati Baubau Logo" style="max-height: 2rem;">
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->

@@ -82,7 +82,7 @@
                   <a href="{{ route('admin.event.edit', ['event' => $event->id]) }}" class="table-action" data-toggle="tooltip" data-original-title="Sunting">
                     <i class="fas fa-user-edit"></i>
                   </a>
-                  <a href="#" onclick="confirmDelete('{{ $event->id }}')" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
+                  <a href="{{ route('admin.event.destroy', ['event' => $event->id]) }}" onclick="return confirmDelete()" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
                     <i class="fas fa-trash"></i>
                   </a>
                 </td>
@@ -102,7 +102,8 @@
 
 @section('page_scripts')
   <script type="text/javascript">
-  function confirmDelete(id){
+  function confirmDelete(event){
+    event.preventDefault();
     Swal.fire({
       title: 'Kamu yakin?',
       text: "Anda akan menghapus Kegiatan tersebut, semua Dokumen mengenai Kegiatan ini akan ikut terhapus",
@@ -114,11 +115,7 @@
       cancelButtonText: 'Batal'
     }).then((result) => {
       if (result.isConfirmed) {
-        Swal.fire(
-          'Deleted!',
-          'Your file has been deleted.',
-          'success'
-        )
+        window.location.href = this.getAttribute('href');
       }
     })
   }

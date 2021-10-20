@@ -45,6 +45,7 @@
                 <th scope="col">Periode Registrasi</th>
                 <th scope="col">Periode Kegiatan</th>
                 <th scope="col">Tipe Pendaftaran</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -69,6 +70,14 @@
                 </td>
                 <td>
                   {{ $event->getRegistrarTypeText() }}
+                </td>
+                <td class="table-actions">
+                  <a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Edit product">
+                    <i class="fas fa-user-edit"></i>
+                  </a>
+                  <a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Delete product">
+                    <i class="fas fa-trash"></i>
+                  </a>
                 </td>
               </tr>
               @endforeach

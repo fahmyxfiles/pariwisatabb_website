@@ -64,7 +64,7 @@
    <script src="{{ asset('js/argon.js?v=1.1.0') }}"></script>
    <!-- Demo JS - remove this in your project -->
    <script src="{{ asset('js/demo.min.js') }}"></script>
-
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
    @yield('page_scripts')
  </body>
  

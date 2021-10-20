@@ -42,28 +42,31 @@
                 <th scope="col">Nama Kegiatan</th>
                 <th scope="col">Link</th>
                 <th scope="col">Lokasi</th>
-                <th scope="col">Mulai Registrasi</th>
-                <th scope="col">Selesai Registrasi</th>
-                <th scope="col">Mulai Kegiatan</th>
-                <th scope="col">Selesai Kegiatan</th>
+                <th scope="col">Periode Registrasi</th>
+                <th scope="col">Periode Kegiatan</th>
                 <th scope="col">Tipe Pendaftaran</th>
               </tr>
             </thead>
             <tbody>
+              @foreach($events as $event)
               <tr>
                 <th scope="row">
-                  /argon/
+                  {{ $event->name }}
                 </th>
                 <td>
-                  4,569
+                  {{ route('event.show', ['name' => $event->slug]) }}
                 </td>
                 <td>
-                  340
+                  {{ $event->location }}
                 </td>
                 <td>
-                  <i class="fas fa-arrow-up text-success mr-3"></i> 46,53%
+                  {{ $event->start_registration }} s.d {{ $event->end_registration }}
+                </td>
+                <td>
+                  {{ $event->start_event }} s.d {{ $event->end_event }}
                 </td>
               </tr>
+              @endforeach
             </tbody>
           </table>
         </div>

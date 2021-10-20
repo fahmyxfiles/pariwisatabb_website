@@ -42,6 +42,7 @@
           <table class="table align-items-center table-flush">
             <thead class="thead-light">
               <tr>
+                <th scope="col">#</th>
                 <th scope="col">Nama Kegiatan</th>
                 <th scope="col">Link</th>
                 <th scope="col">Lokasi</th>
@@ -54,6 +55,9 @@
             <tbody>
               @foreach($events as $event)
               <tr>
+                <td>
+                  {{ $loop->index+1 }}
+                </td>
                 <th scope="row">
                   {{ $event->name }}
                 </th>

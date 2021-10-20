@@ -16,4 +16,15 @@ class Event extends Model
     {
         return $this->hasMany(EventFile::class);
     }
+    //'internal','internal_gforms','external_contact','external_url'
+    public function getRegistrarTypeText()
+    {
+        $result = [
+            'internal' => 'Formulir Situs',
+            'internal_gforms' => 'Google Form',
+            'external_contact' => 'Hubungi Kontak',
+            'external_url' => 'Formulir Luar Situs',
+        ];
+        return $result[$this->registrar_type];
+    }
 }

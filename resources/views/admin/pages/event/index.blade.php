@@ -67,6 +67,9 @@
                 <td>
                   {{ $event->start_event->format('d-m-Y H:i:s') }} s.d {{ $event->end_event->format('d-m-Y H:i:s') }}
                 </td>
+                <td>
+                  {{ $event->getRegistrarTypeText() }}
+                </td>
               </tr>
               @endforeach
             </tbody>

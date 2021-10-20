@@ -82,7 +82,7 @@
                   <a href="{{ route('admin.event.edit', ['event' => $event->id]) }}" class="table-action" data-toggle="tooltip" data-original-title="Sunting">
                     <i class="fas fa-user-edit"></i>
                   </a>
-                  <a href="{{ route('admin.event.destroy', ['event' => $event->id]) }}" onclick="return confirmDelete(this)" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
+                  <a href="{{ route('admin.event.destroy', ['event' => $event->id]) }}" onclick="return confirmDelete(event)" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
                     <i class="fas fa-trash"></i>
                   </a>
                 </td>

@@ -89,7 +89,7 @@
               </tr>
               @empty
               <tr>
-                <td colspan="7">Tidak ada kegiatan</td>
+                <td colspan="8">Tidak ada kegiatan</td>
               </tr>
               @endforelse
             </tbody>

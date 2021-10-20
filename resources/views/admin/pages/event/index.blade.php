@@ -33,7 +33,7 @@
               <h3 class="mb-0">Daftar Kegiatan</h3>
             </div>
             <div class="col text-right">
-              <a href="#!" class="btn btn-sm btn-success">Tambah Kegiatan</a>
+              <a href="{{ route('admin.event.create') }}" class="btn btn-sm btn-success">Tambah Kegiatan</a>
             </div>
           </div>
         </div>
@@ -79,10 +79,10 @@
                   {{ $event->getRegistrarTypeText() }}
                 </td>
                 <td class="table-actions">
-                  <a href="#!" class="table-action" data-toggle="tooltip" data-original-title="Sunting">
+                  <a href="{{ route('admin.event.edit', ['event' => $event->id]) }}" class="table-action" data-toggle="tooltip" data-original-title="Sunting">
                     <i class="fas fa-user-edit"></i>
                   </a>
-                  <a href="#!" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
+                  <a href="{{ route('admin.event.destroy', ['event' => $event->id]) }}" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
                     <i class="fas fa-trash"></i>
                   </a>
                 </td>

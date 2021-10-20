@@ -115,7 +115,7 @@
       cancelButtonText: 'Batal'
     }).then((result) => {
       if (result.isConfirmed) {
-        window.location.href = this.getAttribute('href');
+        window.location.href = event.currentTarget.getAttribute('href');
       }
     })
   }

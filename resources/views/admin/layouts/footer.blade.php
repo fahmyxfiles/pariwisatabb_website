@@ -14,12 +14,6 @@
           <li class="nav-item">
             <a href="https://www.mymoments.web.id" class="nav-link" target="_blank">MyMoments Production</a>
           </li>
-          <li class="nav-item">
-            <a href="https://www.visitbaubau.id/berita" class="nav-link" target="_blank">Berita</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.mymoments.web.id/license" class="nav-link" target="_blank">Hak Cipta</a>
-          </li>
         </ul>
       </div>
     </div>

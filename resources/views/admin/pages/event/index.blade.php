@@ -62,10 +62,10 @@
                   {{ $event->location }}
                 </td>
                 <td>
-                  {{ $event->start_registration }} s.d {{ $event->end_registration }}
+                  {{ $event->start_registration->format('d-m-Y H:i:s') }} s.d {{ $event->end_registration->format('d-m-Y H:i:s') }}
                 </td>
                 <td>
-                  {{ $event->start_event }} s.d {{ $event->end_event }}
+                  {{ $event->start_event->format('d-m-Y H:i:s') }} s.d {{ $event->end_event->format('d-m-Y H:i:s') }}
                 </td>
               </tr>
               @endforeach

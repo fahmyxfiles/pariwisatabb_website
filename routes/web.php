@@ -51,6 +51,6 @@ Route::prefix('admin')->group(function () {
 
         Route::post('/store', [EventController::class, 'store'])->name('admin.event.store'); // SAVE-NEW
         Route::post('/update/{event}', [EventController::class, 'update'])->name('admin.event.update'); // UPDATE-EXISTING
-        Route::post('/destroy/{event}', [EventController::class, 'destroy'])->name('admin.event.destroy'); // DELETE-EXISTING
+        Route::get('/destroy/{event}', [EventController::class, 'destroy'])->name('admin.event.destroy'); // DELETE-EXISTING
     });
 });

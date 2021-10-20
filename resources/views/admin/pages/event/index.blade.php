@@ -82,7 +82,7 @@
                   <a href="{{ route('admin.event.edit', ['event' => $event->id]) }}" class="table-action" data-toggle="tooltip" data-original-title="Sunting">
                     <i class="fas fa-user-edit"></i>
                   </a>
-                  <a href="{{ route('admin.event.destroy', ['event' => $event->id]) }}" onclick="return confirmDelete(event)" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
+                  <a href="#" onclick="return confirmDelete(event, '{{ route('admin.event.destroy', ['event' => $event->id]) }}')" class="table-action table-action-delete" data-toggle="tooltip" data-original-title="Hapus">
                     <i class="fas fa-trash"></i>
                   </a>
                 </td>
@@ -102,7 +102,7 @@
 
 @section('page_scripts')
   <script type="text/javascript">
-  function confirmDelete(event){
+  function confirmDelete(event, confirmUrl){
     event.preventDefault();
     Swal.fire({
       title: 'Kamu yakin?',
@@ -115,7 +115,7 @@
       cancelButtonText: 'Batal'
     }).then((result) => {
       if (result.isConfirmed) {
-        window.location.href = event.currentTarget.getAttribute('href');
+        window.location.href = confirmUrl;
       }
     })
   }

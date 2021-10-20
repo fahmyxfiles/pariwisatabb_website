@@ -33,10 +33,10 @@
  </head>
  
  <body>
-   @include('layouts.sidenav')
+   @include('admin.layouts.sidenav')
    <!-- Main content -->
    <div class="main-content" id="panel">
-     @include('layouts.topnav')
+     @include('admin.layouts.topnav')
      <!-- Header -->
      <!-- Header -->
      <div class="header bg-primary pb-6">
@@ -47,7 +47,7 @@
      <!-- Page content -->
      <div class="container-fluid mt--6">
         @yield('page_contents')
-        @include('layouts.footer')
+        @include('admin.layouts.footer')
      </div>
    </div>
    <!-- Argon Scripts -->

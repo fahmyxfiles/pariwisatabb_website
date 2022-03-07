@@ -140,7 +140,7 @@
                                 </div>
                                 <?php 
                                     $roomImage = array_filter($data->images, function ($image) use($room) {
-                                        return $image->hotel_room_id === $room->id;
+                                        return $image->guest_house_room_id === $room->id;
                                     });
                                 ?>
                                 @empty($roomImage)
